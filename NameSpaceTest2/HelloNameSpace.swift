@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class HelloNameSpace {
+open class HelloNameSpace: NSOBject {
 
     public override init() {
         super.init()
