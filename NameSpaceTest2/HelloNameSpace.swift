@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class HelloNameSpace: NSOBject {
+open class HelloNameSpace: NSObject {
 
     public override init() {
         super.init()
