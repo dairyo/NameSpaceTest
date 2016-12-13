@@ -11,6 +11,10 @@
 		B609619A1DFE9CE4007CB8B5 /* NameSpaceTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60961991DFE9CE4007CB8B5 /* NameSpaceTestTests.swift */; };
 		B609619C1DFE9CE4007CB8B5 /* NameSpaceTest.h in Headers */ = {isa = PBXBuildFile; fileRef = B609618E1DFE9CE4007CB8B5 /* NameSpaceTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B60961A61DFE9CF3007CB8B5 /* HelloNameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60961A51DFE9CF3007CB8B5 /* HelloNameSpace.swift */; };
+		B69DBF1B1DFFCAF7001CFFC7 /* NameSpaceTest3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DBF121DFFCAF7001CFFC7 /* NameSpaceTest3.framework */; };
+		B69DBF201DFFCAF7001CFFC7 /* NameSpaceTest3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DBF1F1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.swift */; };
+		B69DBF221DFFCAF7001CFFC7 /* NameSpaceTest3.h in Headers */ = {isa = PBXBuildFile; fileRef = B69DBF141DFFCAF7001CFFC7 /* NameSpaceTest3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B69DBF2A1DFFCB17001CFFC7 /* HelloNameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DBF291DFFCB17001CFFC7 /* HelloNameSpace.swift */; };
 		B6B48D041DFFBB7400E1DD2E /* NameSpaceTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B48CFB1DFFBB7400E1DD2E /* NameSpaceTest2.framework */; };
 		B6B48D091DFFBB7400E1DD2E /* NameSpaceTest2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B48D081DFFBB7400E1DD2E /* NameSpaceTest2Tests.swift */; };
 		B6B48D0B1DFFBB7400E1DD2E /* NameSpaceTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B48CFD1DFFBB7400E1DD2E /* NameSpaceTest2.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B609618A1DFE9CE4007CB8B5;
 			remoteInfo = NameSpaceTest;
+		};
+		B69DBF1C1DFFCAF7001CFFC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60961821DFE9CE4007CB8B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69DBF111DFFCAF7001CFFC7;
+			remoteInfo = NameSpaceTest3;
 		};
 		B6B48D051DFFBB7400E1DD2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -42,6 +53,13 @@
 		B60961991DFE9CE4007CB8B5 /* NameSpaceTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceTestTests.swift; sourceTree = "<group>"; };
 		B609619B1DFE9CE4007CB8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60961A51DFE9CF3007CB8B5 /* HelloNameSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloNameSpace.swift; sourceTree = "<group>"; };
+		B69DBF121DFFCAF7001CFFC7 /* NameSpaceTest3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NameSpaceTest3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69DBF141DFFCAF7001CFFC7 /* NameSpaceTest3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSpaceTest3.h; sourceTree = "<group>"; };
+		B69DBF151DFFCAF7001CFFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69DBF1A1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameSpaceTest3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69DBF1F1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpaceTest3Tests.swift; sourceTree = "<group>"; };
+		B69DBF211DFFCAF7001CFFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69DBF291DFFCB17001CFFC7 /* HelloNameSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloNameSpace.swift; sourceTree = "<group>"; };
 		B6B48CFB1DFFBB7400E1DD2E /* NameSpaceTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NameSpaceTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B48CFD1DFFBB7400E1DD2E /* NameSpaceTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSpaceTest2.h; sourceTree = "<group>"; };
 		B6B48CFE1DFFBB7400E1DD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +82,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60961951DFE9CE4007CB8B5 /* NameSpaceTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF0E1DFFCAF7001CFFC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF171DFFCAF7001CFFC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DBF1B1DFFCAF7001CFFC7 /* NameSpaceTest3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +125,8 @@
 				B60961981DFE9CE4007CB8B5 /* NameSpaceTestTests */,
 				B6B48CFC1DFFBB7400E1DD2E /* NameSpaceTest2 */,
 				B6B48D071DFFBB7400E1DD2E /* NameSpaceTest2Tests */,
+				B69DBF131DFFCAF7001CFFC7 /* NameSpaceTest3 */,
+				B69DBF1E1DFFCAF7001CFFC7 /* NameSpaceTest3Tests */,
 				B609618C1DFE9CE4007CB8B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +138,8 @@
 				B60961941DFE9CE4007CB8B5 /* NameSpaceTestTests.xctest */,
 				B6B48CFB1DFFBB7400E1DD2E /* NameSpaceTest2.framework */,
 				B6B48D031DFFBB7400E1DD2E /* NameSpaceTest2Tests.xctest */,
+				B69DBF121DFFCAF7001CFFC7 /* NameSpaceTest3.framework */,
+				B69DBF1A1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +161,25 @@
 				B609619B1DFE9CE4007CB8B5 /* Info.plist */,
 			);
 			path = NameSpaceTestTests;
+			sourceTree = "<group>";
+		};
+		B69DBF131DFFCAF7001CFFC7 /* NameSpaceTest3 */ = {
+			isa = PBXGroup;
+			children = (
+				B69DBF141DFFCAF7001CFFC7 /* NameSpaceTest3.h */,
+				B69DBF151DFFCAF7001CFFC7 /* Info.plist */,
+				B69DBF291DFFCB17001CFFC7 /* HelloNameSpace.swift */,
+			);
+			path = NameSpaceTest3;
+			sourceTree = "<group>";
+		};
+		B69DBF1E1DFFCAF7001CFFC7 /* NameSpaceTest3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B69DBF1F1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.swift */,
+				B69DBF211DFFCAF7001CFFC7 /* Info.plist */,
+			);
+			path = NameSpaceTest3Tests;
 			sourceTree = "<group>";
 		};
 		B6B48CFC1DFFBB7400E1DD2E /* NameSpaceTest2 */ = {
@@ -153,6 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B609619C1DFE9CE4007CB8B5 /* NameSpaceTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF0F1DFFCAF7001CFFC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DBF221DFFCAF7001CFFC7 /* NameSpaceTest3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +265,42 @@
 			name = NameSpaceTestTests;
 			productName = NameSpaceTestTests;
 			productReference = B60961941DFE9CE4007CB8B5 /* NameSpaceTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B69DBF111DFFCAF7001CFFC7 /* NameSpaceTest3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69DBF231DFFCAF7001CFFC7 /* Build configuration list for PBXNativeTarget "NameSpaceTest3" */;
+			buildPhases = (
+				B69DBF0D1DFFCAF7001CFFC7 /* Sources */,
+				B69DBF0E1DFFCAF7001CFFC7 /* Frameworks */,
+				B69DBF0F1DFFCAF7001CFFC7 /* Headers */,
+				B69DBF101DFFCAF7001CFFC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NameSpaceTest3;
+			productName = NameSpaceTest3;
+			productReference = B69DBF121DFFCAF7001CFFC7 /* NameSpaceTest3.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B69DBF191DFFCAF7001CFFC7 /* NameSpaceTest3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69DBF261DFFCAF7001CFFC7 /* Build configuration list for PBXNativeTarget "NameSpaceTest3Tests" */;
+			buildPhases = (
+				B69DBF161DFFCAF7001CFFC7 /* Sources */,
+				B69DBF171DFFCAF7001CFFC7 /* Frameworks */,
+				B69DBF181DFFCAF7001CFFC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69DBF1D1DFFCAF7001CFFC7 /* PBXTargetDependency */,
+			);
+			name = NameSpaceTest3Tests;
+			productName = NameSpaceTest3Tests;
+			productReference = B69DBF1A1DFFCAF7001CFFC7 /* NameSpaceTest3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B6B48CFA1DFFBB7400E1DD2E /* NameSpaceTest2 */ = {
@@ -258,6 +358,15 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					B69DBF111DFFCAF7001CFFC7 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					B69DBF191DFFCAF7001CFFC7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					B6B48CFA1DFFBB7400E1DD2E = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -285,6 +394,8 @@
 				B60961931DFE9CE4007CB8B5 /* NameSpaceTestTests */,
 				B6B48CFA1DFFBB7400E1DD2E /* NameSpaceTest2 */,
 				B6B48D021DFFBB7400E1DD2E /* NameSpaceTest2Tests */,
+				B69DBF111DFFCAF7001CFFC7 /* NameSpaceTest3 */,
+				B69DBF191DFFCAF7001CFFC7 /* NameSpaceTest3Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +409,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B60961921DFE9CE4007CB8B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF101DFFCAF7001CFFC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF181DFFCAF7001CFFC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,6 +462,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B69DBF0D1DFFCAF7001CFFC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DBF2A1DFFCB17001CFFC7 /* HelloNameSpace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DBF161DFFCAF7001CFFC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DBF201DFFCAF7001CFFC7 /* NameSpaceTest3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6B48CF61DFFBB7400E1DD2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +501,11 @@
 			isa = PBXTargetDependency;
 			target = B609618A1DFE9CE4007CB8B5 /* NameSpaceTest */;
 			targetProxy = B60961961DFE9CE4007CB8B5 /* PBXContainerItemProxy */;
+		};
+		B69DBF1D1DFFCAF7001CFFC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69DBF111DFFCAF7001CFFC7 /* NameSpaceTest3 */;
+			targetProxy = B69DBF1C1DFFCAF7001CFFC7 /* PBXContainerItemProxy */;
 		};
 		B6B48D061DFFBB7400E1DD2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -535,6 +681,71 @@
 			};
 			name = Release;
 		};
+		B69DBF241DFFCAF7001CFFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NameSpaceTest3/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.NameSpaceTest3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		B69DBF251DFFCAF7001CFFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NameSpaceTest3/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.NameSpaceTest3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		B69DBF271DFFCAF7001CFFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NameSpaceTest3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.NameSpaceTest3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B69DBF281DFFCAF7001CFFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NameSpaceTest3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kii.NameSpaceTest3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B6B48D0C1DFFBB7400E1DD2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -629,6 +840,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B69DBF231DFFCAF7001CFFC7 /* Build configuration list for PBXNativeTarget "NameSpaceTest3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69DBF241DFFCAF7001CFFC7 /* Debug */,
+				B69DBF251DFFCAF7001CFFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B69DBF261DFFCAF7001CFFC7 /* Build configuration list for PBXNativeTarget "NameSpaceTest3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69DBF271DFFCAF7001CFFC7 /* Debug */,
+				B69DBF281DFFCAF7001CFFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		B6B48D101DFFBB7400E1DD2E /* Build configuration list for PBXNativeTarget "NameSpaceTest2" */ = {
 			isa = XCConfigurationList;
