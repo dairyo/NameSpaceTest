@@ -9,6 +9,11 @@
 import Foundation
 
 open class HelloNameSpace {
+
+    public override init() {
+        super.init()
+    }
+
     open func helloWorld() {
         print("Hello NameSpace world 2.")
     }

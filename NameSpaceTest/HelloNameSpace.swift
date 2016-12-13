@@ -8,7 +8,11 @@
 
 import Foundation
 
-open class HelloNameSpace {
+open class HelloNameSpace: NSObject {
+    public override init() {
+        super.init()
+    }
+
     open func helloWorld() {
         print("Hello NameSpace world.")
     }
