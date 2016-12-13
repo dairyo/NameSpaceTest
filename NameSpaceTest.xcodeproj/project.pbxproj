@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		B663B6951DFE9DA20021CAD6 /* NameSpaceFatBinary */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = B663B6961DFE9DA20021CAD6 /* Build configuration list for PBXAggregateTarget "NameSpaceFatBinary" */;
-			buildPhases = (
-				B663B6991DFE9DA70021CAD6 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = NameSpaceFatBinary;
-			productName = NameSpaceFatBinary;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		B60961951DFE9CE4007CB8B5 /* NameSpaceTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B609618B1DFE9CE4007CB8B5 /* NameSpaceTest.framework */; };
 		B609619A1DFE9CE4007CB8B5 /* NameSpaceTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60961991DFE9CE4007CB8B5 /* NameSpaceTestTests.swift */; };
@@ -272,10 +258,6 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
-					B663B6951DFE9DA20021CAD6 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					B6B48CFA1DFFBB7400E1DD2E = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -301,7 +283,6 @@
 			targets = (
 				B609618A1DFE9CE4007CB8B5 /* NameSpaceTest */,
 				B60961931DFE9CE4007CB8B5 /* NameSpaceTestTests */,
-				B663B6951DFE9DA20021CAD6 /* NameSpaceFatBinary */,
 				B6B48CFA1DFFBB7400E1DD2E /* NameSpaceTest2 */,
 				B6B48D021DFFBB7400E1DD2E /* NameSpaceTest2Tests */,
 			);
@@ -338,22 +319,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B663B6991DFE9DA70021CAD6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B60961861DFE9CE4007CB8B5 /* Sources */ = {
@@ -570,20 +535,6 @@
 			};
 			name = Release;
 		};
-		B663B6971DFE9DA20021CAD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B663B6981DFE9DA20021CAD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		B6B48D0C1DFFBB7400E1DD2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -677,15 +628,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B663B6961DFE9DA20021CAD6 /* Build configuration list for PBXAggregateTarget "NameSpaceFatBinary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B663B6971DFE9DA20021CAD6 /* Debug */,
-				B663B6981DFE9DA20021CAD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B6B48D101DFFBB7400E1DD2E /* Build configuration list for PBXNativeTarget "NameSpaceTest2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -693,6 +635,7 @@
 				B6B48D0D1DFFBB7400E1DD2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6B48D111DFFBB7400E1DD2E /* Build configuration list for PBXNativeTarget "NameSpaceTest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -701,6 +644,7 @@
 				B6B48D0F1DFFBB7400E1DD2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
